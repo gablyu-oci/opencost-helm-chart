@@ -5,10 +5,11 @@ metadata:
   name: {{ .Values.opencost.customPricing.configmapName }}
   namespace: {{ include "opencost.namespace" . }}
 data:
+  {{ .Values.opencost.customPricing.provider }}.json: |
     {
 {{- range $key, $val := .Values.opencost.customPricing.costModel }}
-{{ $key | quote | indent 6}}: {{ $val | quote }},
+      {{ $key | quote }}: {{ $val | quote }},
 {{- end}}
-      "provider" : {{ .Values.opencost.customPricing.provider | quote }}
+      "provider": {{ .Values.opencost.customPricing.provider | quote }}
     }
 {{- end }}

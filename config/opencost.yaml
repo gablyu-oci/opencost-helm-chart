@@ -11,6 +11,11 @@ opencost:
   exporter:
     defaultClusterId: "default-cluster"
     replicas: 1
+    image:
+      registry: iad.ocir.io
+      repository: iduyx1qnmway/opencost
+      tag: lens-custom-provider
+      pullPolicy: Always
     resources:
       requests:
         cpu: "10m"
@@ -22,13 +27,16 @@ opencost:
       storageClass: "oci-bv"
       accessMode: ReadWriteOnce
       size: 50Gi
+    env:
+      - name: USE_CUSTOM_PROVIDER
+        value: "true"
 
   customPricing:
     enabled: true
     createConfigmap: true
     configmapName: pricing-configs
     configPath: /tmp/custom-config
-    provider: oracle
+    provider: default
     costModel:
       CPU: 0.031611
       spotCPU: 0.006655
