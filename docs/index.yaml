@@ -1,0 +1,29 @@
+apiVersion: v1
+entries:
+  opencost-lens:
+  - annotations:
+      upstream: https://github.com/opencost/opencost-helm-chart
+      upstreamVersion: 2.4.0
+    apiVersion: v2
+    appVersion: 1.118.0
+    created: "2025-11-07T22:38:10.672774399Z"
+    description: OpenCost and OpenCost UI - Lens customized version
+    digest: 17546c93bf0fa3e84e51aeaee9cd892f6a9967a9e44f5e58703cb955f08b7ac1
+    home: https://github.com/gablyu-oci/opencost-helm-chart
+    keywords:
+    - cloud-costs
+    - cost-optimization
+    - finops
+    - monitoring
+    - opencost
+    - lens
+    maintainers:
+    - name: gablyu-oci
+    name: opencost-lens
+    sources:
+    - https://github.com/gablyu-oci/opencost-helm-chart
+    type: application
+    urls:
+    - https://gablyu-oci.github.io/opencost-helm-chart/opencost-lens-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-11-07T22:38:10.670827332Z"
