@@ -12,14 +12,13 @@ entries:
           url: https://github.com/oci-ai-incubations/oci-gpu-scanner
         - name: Upstream Chart
           url: https://github.com/opencost/opencost-helm-chart
-      artifacthub.io/recommendations: "false"
       upstream: https://github.com/opencost/opencost-helm-chart
       upstreamVersion: 2.4.0
     apiVersion: v2
     appVersion: 1.118.0
-    created: "2025-11-07T22:49:23.879902565Z"
+    created: "2025-11-07T23:09:49.756895844Z"
     description: OpenCost and OpenCost UI - Lens customized version
-    digest: 62dc5faa4a433315915b5e2b7a35a1ac317cfd2f382b6e97bbd00cd6d120e6d1
+    digest: 1cf907f63194bf0833207064b151cf5f69c8dbd426809f37eb55e08d7533e4fa
     home: https://github.com/gablyu-oci/opencost-helm-chart
     keywords:
     - cloud-costs
@@ -37,4 +36,4 @@ entries:
     urls:
     - https://gablyu-oci.github.io/opencost-helm-chart/opencost-lens-1.0.0.tgz
     version: 1.0.0
-generated: "2025-11-07T22:49:23.878033668Z"
+generated: "2025-11-07T23:09:49.755041649Z"
